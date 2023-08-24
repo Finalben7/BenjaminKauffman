@@ -21,9 +21,9 @@ for i in range(1, 29):
             'seriesId': seriesId,
             'team1': queuedTeams[m],
             'team2': queuedTeams[n]
-    }
+        }
 # Nest dictionaries inside of results list
-    results.append(result_entry)
+        results.append(result_entry)
 # Increment team2 by 1 each time through the loop to create a unique matchup
     n += 1
 # After checkpoint(s)[0] increment team1 by 1 and team2 by 1 plus the number of times looped 
