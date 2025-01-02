@@ -88,3 +88,23 @@ body {
         margin-top: 0px;
     }
 }
+
+.dots {
+    display: inline-block;
+    width: 1.5em; /* Fixed width for three dots */
+    text-align: left; /* Align dots to the start of the span */
+}
+
+@keyframes dotAnimation {
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80% { content: '...'; }
+    100% { content: '...'; } /* Hold the third dot briefly */
+}
+
+.dots::after {
+    display: inline-block;
+    content: '';
+    animation: dotAnimation 2s infinite steps(1);
+}
