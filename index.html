@@ -1,257 +1,153 @@
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
-  <style>
-    .dots {
-        display: inline-block;
-        width: 1.5em; /* Fixed width for three dots */
-        text-align: left; /* Align dots to the start of the span */
-    }
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
+        <script src="js/scripts.js" defer></script>
+    </head>
 
-    @keyframes dotAnimation {
-        0%, 20% { content: ''; }
-        40% { content: '.'; }
-        60% { content: '..'; }
-        80% { content: '...'; }
-        100% { content: '...'; } /* Hold the third dot briefly */
-    }
-
-    .dots::after {
-        display: inline-block;
-        content: '';
-        animation: dotAnimation 2s infinite steps(1);
-    }
-    </style></head>
-  <body>
-
-    <div class="intro text-white py-3 d-flex justify-content-between">
-        <h1 class="mx-5">K D</h1>
-        <div>
-        <a class="button" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><button type="button" class="btn btn-outline-light m-3">LinkedIn</button></a>
-        <a class="button" href="mailto:kauffman4323@hotmail.com"><button type="button" class="btn btn-outline-light m-3">Contact Me</button></a>
+    <body>
+        <div class="intro text-white py-3 d-flex justify-content-between">
+            <h1 class="mx-5">K D</h1>
+            <div>
+            <a class="button" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><button type="button" class="btn btn-outline-light m-3">LinkedIn</button></a>
+            <a class="button" href="mailto:kauffman4323@hotmail.com"><button type="button" class="btn btn-outline-light m-3">Contact Me</button></a>
+            </div>
         </div>
-    </div>
 
-    <div class="container rounded pt-3 text-center justify-content-center text-white">
-        <h1 class="p-4">Frontend Design and Developement</h1>
-        <h2 class="p-4">Building simple, yet effective web projects is my thing.</h2>
-        <img src="assets/images/portrait.jpg" alt="A portrait of Benjamin Kauffman" class="portrait">
-    </div>
+        <div class="container rounded pt-3 text-center justify-content-center text-white">
+            <h1 class="p-4">Full Stack Web Design and Developement</h1>
+            <h2 class="p-4">Building simple, yet effective web applications is my thing.</h2>
+            <img src="assets/images/portrait.jpg" alt="A portrait of Benjamin Kauffman" class="portrait">
+        </div>
 
-    <div class="container rounded py-5 my-5 text-white">
-        <main class="spacing">
-            <div class="container mt-5 rounded">
-                <div class="row">
-                    <div class="col d-flex justify-content-center mb-5">
-                        <div class="cards text-center p-2" style="width: 20rem;">
-                            <img src="assets/images/develop.png" class="icons p-1">
-                            <h3 class="pt-3 off-color">Develop</h3>
-                            <h6 class="pt-3">Taking ideas and finding/implementing the right tech stack for the job.</h6>
-                            <h6 class="pt-3 off-color">Languages</h6>
-                            <p>JavaScript</p>
-                            <p>MySQL</p>
-                            <p>Python</p>
-                            <p>PHP</p>
-                            <p>C#</p>
-                            <h6 class="pt-3 off-color">Frameworks</h6>
-                            <p>Flask</p>
-                            <p>WordPress</p>
-                            <p>React JS</p>                     
-                        </div> 
-                    </div>
+        <div class="container rounded py-5 my-5 text-white">
+            <main class="spacing">
+                <div class="container mt-5 rounded">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center mb-5">
+                            <div class="cards text-center p-2" style="width: 20rem;">
+                                <img src="assets/images/develop.png" class="icons p-1">
+                                <h3 class="pt-3 off-color">Develop</h3>
+                                <h6 class="pt-3">Taking ideas and finding/implementing the right tech stack for the job.</h6>
+                                <h6 class="pt-3 off-color">Languages</h6>
+                                <p>JavaScript</p>
+                                <p>MySQL</p>
+                                <p>Python</p>
+                                <p>PHP</p>
+                                <p>C#</p>
+                                <h6 class="pt-3 off-color">Frameworks</h6>
+                                <p>Flask</p>
+                                <p>WordPress</p>
+                                <p>React JS</p>                     
+                            </div> 
+                        </div>
 
-                    <div class="col d-flex justify-content-center mb-5">
-                        <div class="cards text-center p-2" style="width: 20rem;">
-                            <img src="assets/images/design.png" class="icons p-1">
-                            <h3 class="pt-3 off-color">Design</h3>
-                            <h6 class="pt-3">Time to start adding some style to the project.</h6>
-                            <h6 class="pt-3 off-color">Languages</h6>
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>Bootstrap</p>
-                            <p>Tailwind CSS</p>
-                            <h6 class="pt-3 off-color">Tools</h6>
-                            <p>Illustrator</p>
-                            <p>Photoshop</p>
-                            <p>Premiere</p>
-                        </div> 
-                    </div>
+                        <div class="col d-flex justify-content-center mb-5">
+                            <div class="cards text-center p-2" style="width: 20rem;">
+                                <img src="assets/images/design.png" class="icons p-1">
+                                <h3 class="pt-3 off-color">Design</h3>
+                                <h6 class="pt-3">Time to start adding some style to the project.</h6>
+                                <h6 class="pt-3 off-color">Languages</h6>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Bootstrap</p>
+                                <p>Tailwind CSS</p>
+                                <h6 class="pt-3 off-color">Tools</h6>
+                                <p>Illustrator</p>
+                                <p>Photoshop</p>
+                                <p>Premiere</p>
+                            </div> 
+                        </div>
 
-                    <div class="col d-flex justify-content-center mb-5">
-                        <div class="cards text-center p-2" style="width: 20rem;">
-                            <img src="assets/images/deploy.png" class="icons p-1">
-                            <h3 class="pt-3 off-color">Deploy</h3>
-                            <h6 class="pt-3">Finding dependable/affordable options to give everyone access to the project.</h6>
-                            <h6 class="pt-3 off-color">Hosting</h6>
-                            <p>GitHub</p>
-                            <p>AWS</p>
-                            <p>Ionos</p>
-                            <p>Ubuntu</p>
-                            <h6 class="pt-3 off-color">Services</h6>
-                            <p>Updates</p>
-                            <p>Maintenence</p>
-                        </div> 
+                        <div class="col d-flex justify-content-center mb-5">
+                            <div class="cards text-center p-2" style="width: 20rem;">
+                                <img src="assets/images/deploy.png" class="icons p-1">
+                                <h3 class="pt-3 off-color">Deploy</h3>
+                                <h6 class="pt-3">Finding dependable/affordable options to give everyone access to the project.</h6>
+                                <h6 class="pt-3 off-color">Hosting</h6>
+                                <p>GitHub</p>
+                                <p>AWS</p>
+                                <p>Ionos</p>
+                                <p>Ubuntu</p>
+                                <h6 class="pt-3 off-color">Services</h6>
+                                <p>Updates</p>
+                                <p>Maintenence</p>
+                            </div> 
+                        </div>
                     </div>
                 </div>
-            </div>
-        </main></div>
+            </main></div>
 
-            <div class="intro text-white text-center py-5 my-5">
-                <div class="container">
-                    <h2 class="pt-5">My name is Benjamin, thanks for stopping by.</h2>
-                    <h3 class="p-5">
-                        Learning Web Developement has sparked a new passion in me. I find it fulfilling to take an idea and bring it to life piece by piece, being the catalyst for the
-                        transformation into the final state. The problems that must be solved along the way are what make the process so rewarding when it's all said and done.
-                    </h3>
+                <div class="intro text-white text-center py-5 my-5">
+                    <div class="container">
+                        <h2 class="pt-5">My name is Benjamin, thanks for stopping by.</h2>
+                        <h3 class="p-5">
+                            Learning Web Developement has sparked a new passion in me. I find it fulfilling to take an idea and bring it to life piece by piece, being the catalyst for the
+                            transformation into the final state. The problems that must be solved along the way are what make the process so rewarding when it's all said and done.
+                        </h3>
+                    </div>
                 </div>
-            </div>
-            
-        <div class="container rounded py-2 pb-5 text-white">    
-            <div class="container mt-5 rounded">
-                <div class="row">
-                    <div class="col d-flex justify-content-center mb-5">
-                        <div class="card" style="width: 20rem;">
-                            <img src="assets/images/underground.png" class="p-5">
+                
+            <div class="container rounded py-2 pb-5 text-white">    
+                <div class="container mt-5 rounded">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center mb-5">
+                            <div class="card" style="width: 20rem;">
+                                <img src="assets/images/underground.png" class="p-5">
+                                    <div class="info text-center">
+                                        <h4>The Underground</h4>
+                                        <h6>An online platform for competing in season long <i>Rocket League</i> competitions.</h6>
+                                        <a class="button p-2" href="https://theunderground.gg" target="_blank">
+                                            <button type="button" class="btn btn-outline-light">Visit</button>
+                                        </a>
+                                    </div>
+                            </div> 
+                        </div>
+
+                        <div class="col d-flex justify-content-center mb-5">
+                            <div class="card" style="width: 20rem;">
+                                <img src="assets/images/bgf-logo.png" class="p-5">
                                 <div class="info text-center">
-                                    <h4>The Underground</h4>
-                                    <h6>An online platform for competing in season long <i>Rocket League</i> competitions.</h6>
-                                    <a class="button p-2" href="https://theunderground.gg" target="_blank">
+                                    <h4>Board Game Finder</h4>
+                                    <h6>A website designed to match you with your next favorite board game.</h6>
+                                    <a class="button p-2" href="bgf/index.html" target="_blank">
                                         <button type="button" class="btn btn-outline-light">Visit</button>
                                     </a>
                                 </div>
-                        </div> 
-                    </div>
+                            </div> 
+                        </div>
 
-                    <div class="col d-flex justify-content-center mb-5">
-                        <div class="card" style="width: 20rem;">
-                            <img src="assets/images/bgf-logo.png" class="p-5">
-                            <div class="info text-center">
-                                <h4>Board Game Finder</h4>
-                                <h6>A website designed to match you with your next favorite board game.</h6>
-                                <a class="button p-2" href="bgf/index.html" target="_blank">
-                                    <button type="button" class="btn btn-outline-light">Visit</button>
-                                </a>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="col d-flex justify-content-center mb-5">
-                        <div class="card" style="width: 20rem;">
-                            <img src="assets/images/snf.png" class="p-5">
-                            <div class="info text-center">
-                                <h4>Siuslaw National Forest</h4>
-                                <h6>A website that provides an overview of the Siuslaw National Forest.</h6>
-                                <a class="button p-2" href="snf/index.html" target="_blank">
-                                    <button type="button" class="btn btn-outline-light">Visit</button>
-                                </a>
-                            </div>
-                        </div> 
+                        <div class="col d-flex justify-content-center mb-5">
+                            <div class="card" style="width: 20rem;">
+                                <img src="assets/images/snf.png" class="p-5">
+                                <div class="info text-center">
+                                    <h4>Siuslaw National Forest</h4>
+                                    <h6>A website that provides an overview of the Siuslaw National Forest.</h6>
+                                    <a class="button p-2" href="snf/index.html" target="_blank">
+                                        <button type="button" class="btn btn-outline-light">Visit</button>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
                 </div>
-            </div>
-        
-    </div>
-
-    <div class="intro text-white text-center mt-5 p-5">
-        <h4 class="p-5">I look forward to working with you soon</h4>
-        <div class="d-flex justify-content-center">
-            <h1 class="m-5">K D</h1>
-            <a class="button" href="mailto:kauffman4323@hotmail.com"><button type="button" class="btn btn-outline-light mt-5">Contact Me</button></a>
+            
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fbe64374c6d6800&quot;,&quot;version&quot;:&quot;2024.10.5&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;52ef766ca6e74880a1c664b22aef5828&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+        <div class="intro text-white text-center mt-5 p-5">
+            <h4 class="p-5">I look forward to working with you soon</h4>
+            <div class="d-flex justify-content-center">
+                <h1 class="m-5">K D</h1>
+                <a class="button" href="mailto:kauffman4323@hotmail.com"><button type="button" class="btn btn-outline-light mt-5">Contact Me</button></a>
+            </div>
+        </div>
 
-
-
-<script>
-    // Create a flag to track Turnstile verification status
-    let isTurnstileVerified = false;
-
-    // Define the Turnstile callback function
-    function turnstileCallback(token) {
-        // This function is called when Turnstile verification succeeds
-        console.log('Turnstile verified with token:', token);
-        isTurnstileVerified = true;
-
-        // Remove the overlay automatically if Turnstile verification is successful
-        if (isTurnstileVerified) {
-            overlay.remove();
-        }
-    }
-
-    // Create an overlay element
-    const overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100vw';
-    overlay.style.height = '100vh';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Semi-transparent black
-    overlay.style.zIndex = '9999'; // Ensure it's above everything else
-    overlay.style.backdropFilter = 'blur(5px)'; // Add a blur effect
-
-    // Create a container for content
-    const container = document.createElement('div');
-    container.style.position = 'absolute';
-    container.style.top = '50%';
-    container.style.left = '50%';
-    container.style.transform = 'translate(-50%, -50%)';
-    container.style.textAlign = 'center';
-    container.style.zIndex = '10000'; // Ensure it's above the overlay blur
-
-    // Create the text element with animated ellipsis
-    const text = document.createElement('p');
-    text.style.color = '#fff'; // White text
-    text.style.fontSize = '1.5rem';
-    text.style.marginBottom = '10px'; // Add spacing below the text
-    text.innerHTML = "Making Sure You're Not A Bot<span class='dots'></span>";
-
-    // Add styles for the animated ellipsis
-    const style = document.createElement('style');
-    style.textContent = `
-    .dots {
-        display: inline-block;
-        width: 1.5em; /* Fixed width for three dots */
-        text-align: left; /* Align dots to the start of the span */
-    }
-
-    @keyframes dotAnimation {
-        0%, 20% { content: ''; }
-        40% { content: '.'; }
-        60% { content: '..'; }
-        80% { content: '...'; }
-        100% { content: '...'; } /* Hold the third dot briefly */
-    }
-
-    .dots::after {
-        display: inline-block;
-        content: '';
-        animation: dotAnimation 2s infinite steps(1);
-    }
-    `;
-    document.head.appendChild(style);
-
-    // Create the Turnstile widget container
-    const cfTurnstile = document.createElement('div');
-    cfTurnstile.className = 'cf-turnstile';
-    cfTurnstile.setAttribute('data-sitekey', '0x4AAAAAAA4Dh3aGzUh-heP-'); // Replace with your Turnstile site key
-    cfTurnstile.setAttribute('data-callback', 'turnstileCallback'); // Specify the callback function name
-
-    // Append elements to the container
-    container.appendChild(text);
-    container.appendChild(cfTurnstile);
-
-    // Add the container to the overlay
-    overlay.appendChild(container);
-
-    // Add the overlay to the page
-    document.body.appendChild(overlay);
-</script>
-</body></html>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fbe64374c6d6800&quot;,&quot;version&quot;:&quot;2024.10.5&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;52ef766ca6e74880a1c664b22aef5828&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+    </body>
+</html>
