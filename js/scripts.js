@@ -47,11 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- Render Turnstile when API is ready ---
     function renderTurnstile() {
         if (window.turnstile && typeof window.turnstile.render === 'function') {
-            window.turnstile.render(turnstileDiv, {
-                sitekey: '0x4AAAAAAA4Dh3aGzUh-heP-',
-                callback: window.turnstileCallback,
-                theme: 'light'
-            });
+          window.turnstile.render(turnstileDiv, {
+              sitekey: '0x4AAAAAAA4Dh3aGzUh-heP-',
+              callback: window.turnstileCallback,
+              appearance: 'always',
+              action: 'homepage',
+              cData: 'portfolio',
+              sandbox: 'allow-same-origin allow-scripts allow-popups allow-top-navigation'
+          });
             console.log("Turnstile rendered successfully");
         } else {
             setTimeout(renderTurnstile, 100);
